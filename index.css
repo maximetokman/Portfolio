@@ -71,3 +71,18 @@ body {
 .main_content a:active {
     color: gray;
 }
+
+.main_content #resume {
+    margin-top: 5px;
+    background-color: turquoise;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 1em;
+    border: 2px solid turquoise;
+    border-radius: 4px;
+}
+
+.main_content #resume:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
