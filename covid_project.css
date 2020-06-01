@@ -53,15 +53,6 @@ body {
     text-align: center;
 }
 
-.main_content a {
-    text-decoration: underline;
-    color: black;
-}
-
-.main_content a:active {
-    color: gray;
-}
-
 .container {
     display: grid;
     margin-left: 25%;
@@ -72,5 +63,42 @@ body {
     margin-top: -70px;
 }
 
+.container p {
+    text-align: left;
+    text-indent: 50px;
+    line-height: 22px;
+    margin-bottom: 25px;
+    margin-top: -15px;
+    font-size: 18px;
+}
 
+.main_content #report {
+    margin-top: 5px;
+    background-color: turquoise;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid turquoise;
+    border-radius: 4px;
+    justify-content: center;
+}
 
+.main_content #report:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.main_content #projects {
+    margin-top: 50px;
+    background-color: turquoise;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid turquoise;
+    border-radius: 4px;
+    justify-content: center;
+}
+.main_content #projects:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
