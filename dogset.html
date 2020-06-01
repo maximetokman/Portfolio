@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <title>Image Recognition</title>
+    <link rel="stylesheet" href="dogset.css" >
+    <body>
+        <div class="title">
+            <h1>Max Tokman</h1>
+            <p>Software Developer</p>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about_me.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Information</a>
+        </div>
+        <div class="main_content">
+            <div class="container"> 
+                <h1>Image Recognition</h1>
+                <p>
+                    Here I utlized python's PyTorch library to create an image recognition 
+                    algorithm that classifies picturs of dogs according to 10 different breeds. 
+                    I built both a convolutional and a fully connected network to train the model. 
+                    For the fully connected network, I used 2 hidden layers and 4 total layers. The 
+                    convolutional network also had 4 total layers with 2 hidden layers. I then 
+                    trained the models on the training partition of 'DogSet', a data set of 
+                    roughly 10,000 dog pictures and their corresponding breed. For the convolutional 
+                    network, I used a kernel size of (5, 5) and stride (1, 1). I used a kernel size of 2 
+                    for the pooling step.
+                </p>
+                <p>
+                    After training both a fully connected and convolutional neural network, I compared 
+                    their accuracies and found that the convolutional network resulted in about a 45% 
+                    accuracy as opposed to the fully connected network, which had an accuracy of about 
+                    35%.
+                </p>
+                <p>
+                    During training, the algorithm also computed the accuracy on the training and 
+                    validation partitions of the data set over every epoch (a full iteration of the data 
+                    set). Below are the graphs of accuracy over each epoch for both models. As we can see, 
+                    training accuracy remained higher than validation accuracy, with both increasing.
+                </p>
+                <p>
+                    This is the plot of accuracy for a fully connected network for the dog data 
+                    set:
+                    <br><img src="fully_connected.png">
+                </p>
+                <p>
+                    This is the plot of accuracy for a convolutional network:
+                    <br><img src="convolutional.png">
+                </p>
+            </div>
+            <a href="projects.html">
+                <br><button id="projects">Back to Projects</button>
+            </a>
+        </div>
+    </body>
+</html>
