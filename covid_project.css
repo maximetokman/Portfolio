@@ -102,3 +102,12 @@ body {
     background-color: #eee;
     cursor: pointer;
 }
+
+.main_content a {
+    text-decoration: underline;
+    color: black;
+}
+
+.main_content a:active {
+    color: gray;
+}
