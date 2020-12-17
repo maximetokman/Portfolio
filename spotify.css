@@ -44,14 +44,8 @@ body {
     background-color: #aaaaaa;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 .main_content {
-    display: grid;
+    display: block;
     background-color: #eee;
     margin-left: -10px;
     margin-right: -10px;
@@ -59,66 +53,46 @@ body {
     text-align: center;
 }
 
-.main_content h1 {
-    font-size: 2em;
-    font-weight: bold;
+.container {
+    display: grid;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
-.main_content p {
-    font-weight: bold;
-    line-height: 2em;
-    margin-bottom: 2em;
+.container h1 {
+    margin-top: -70px;
 }
 
-.main_content a {
-    text-decoration: underline;
-    color: black;
+.container p {
+    text-align: left;
+    text-indent: 50px;
+    line-height: 22px;
+    margin-bottom: 25px;
+    margin-top: -15px;
+    font-size: 18px;
 }
 
-.main_content a:active {
-    color: gray;
-}
 
-.main_content #resume {
-    margin-top: 5px;
+
+.main_content #projects {
+    margin-top: 50px;
     background-color: turquoise;
     padding: 15px 40px;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 20px;
     border: 2px solid turquoise;
     border-radius: 4px;
+    justify-content: center;
 }
-
-.main_content #linkedin {
-    margin-top: 5px;
-    background-color: turquoise;
-    padding: 15px 40px;
-    font-weight: bold;
-    font-size: 1em;
-    border: 2px solid turquoise;
-    border-radius: 4px;
-}
-
-.main_content #linkedin:hover {
+.main_content #projects:hover {
     background-color: #eee;
     cursor: pointer;
 }
 
-.main_content #resume:hover {
-    background-color: #eee;
-    cursor: pointer;
-}
-
-.recents {
-    padding-left: 300px;
-    padding-right: 300px;
-}
-
-
-.recents img {
-    border-radius: 10%;
-}
-
-.recents h1 {
-    font-size: 1.5em;
+.container img{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
